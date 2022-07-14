@@ -27,8 +27,8 @@
 [x] make one book (expanded version): 
     [x] hardcode 
     [x] pull data in 
-[ ] make component of info to be expanded 
 [x] loop through books
+[x] make component of info to be expanded 
 [ ] include state:
     [ ] all books expanded or not 
     [ ] make ternery thing to display expanded or not for one instance 

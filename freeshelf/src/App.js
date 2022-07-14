@@ -1,6 +1,8 @@
 import React from 'react'
 // import logo from './logo.svg';
 import './App.css';
+import 'bulma/css/bulma.min.css';
+
 
 function App() {
   const allBooks = [
@@ -86,7 +88,7 @@ function App() {
     }
   ]
   return (
-    <div className='book-card'>
+    <div className="box has-background-warning">
       {allBooks.map((book, index) => (
         <Book book={book} key={index}/>
       ))}
@@ -94,13 +96,21 @@ function App() {
   );
 }
 
-function Book({ book }) {
+function Book({ book, index }) {
   return (
-    <div>
+    <div className='box has-background-grey-lighter'>
       <div>Title: {book.title}</div>
       <div>Author: {book.author}</div>
       <div>Short description: {book.shortDescription}</div>
       <img src='{book.coverImageUrl}' alt='Cover Image'></img>
+      <Detail book={book} key={index} />
+    </div>
+  )
+}
+
+function Detail({ book }) {
+  return (
+    <div>
       <div>URL: <a href="book.url">{book.url}</a></div>
       <div>Published by: {book.publisher}</div>
       <div>Published on: {book.publicationDate}</div>
@@ -110,15 +120,3 @@ function Book({ book }) {
 }
 
 export default App;
-
-const book = {
-  "title": "You Don't Know JS Yet: Getting Started",
-"author": "Kyle Simpson",
-"url": "https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/get-started",
-"shortDescription": "If you're just getting into programming and/or JavaScript, this book will briefly explore what you need to get up and going.",
-"coverImageUrl": "https://github.com/getify/You-Dont-Know-JS/raw/2nd-ed/get-started/images/cover.png",
-"publisher": "Frontend Masters",
-"publicationDate": "Jan 2020",
-"detailedDescription": "It’s easy to learn parts of JavaScript, but much harder to learn it completely—or even sufficiently—whether you’re new to the language or have used it for years. With the 'You Don’t Know JS' book series, you’ll get a more complete understanding of JavaScript, including trickier parts of the language that many experienced JavaScript programmers simply avoid. The series’ first book, Up & Going, provides the necessary background for those of you with limited programming experience. By learning the basic building blocks of programming, as well as JavaScript’s core mechanisms, you’ll be prepared to dive into the other, more in-depth books in the series—and be well on your way toward true JavaScript."
-}
-
