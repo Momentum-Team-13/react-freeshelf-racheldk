@@ -21,12 +21,12 @@
 
 # Things to do! 
 [x] sketch views 
-[ ] delete files you don't need 
-[ ] can load something on the page 
-[ ] copy-paste book info 
-[ ] make one book: 
-    [ ] hardcode 
-    [ ] pull data in 
+[x] delete files you don't need 
+[x] can load something on the page 
+[x] copy-paste book info 
+[x] make one book (expanded version): 
+    [x] hardcode 
+    [x] pull data in 
 [ ] make component of info to be expanded 
 [ ] loop through books
 [ ] include state:
@@ -34,7 +34,11 @@
     [ ] make ternery thing to display expanded or not for one instance 
     [ ] button for user to choose expanded or not 
 [ ] styling 
-    
+
+# Fix:
+[ ] make image show up 
+
+
 <!-- [ ] sketch children/trees? how will props pass? 
 
 [ ] make book component(s??)
