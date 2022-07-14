@@ -5,6 +5,14 @@ import './App.css';
 function App() {
   return (
     <div className='book-card'>
+      {<Book book={book}/>}
+    </div>
+  );
+}
+
+function Book({book}) {
+  return (
+    <div>
       <div>Title: {book.title}</div>
       <div>Author: {book.author}</div>
       <div>Short description: {book.shortDescription}</div>
@@ -14,7 +22,7 @@ function App() {
       <div>Published on: {book.publicationDate}</div>
       <div>Detailed description: {book.detailedDescription}</div>
     </div>
-  );
+  )
 }
 
 export default App;
