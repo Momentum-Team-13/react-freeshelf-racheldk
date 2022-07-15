@@ -1,12 +1,9 @@
 import React from 'react'
-// import logo from './logo.svg';
 import './App.css';
-import Book from './Book.js'
 import 'bulma/css/bulma.min.css';
-import { useState } from 'react'
-import App from './App';
 
-function Detail({ book }) {
+
+export default function Detail({ book }) {
     return (
         <div>
             <div className='my-1 has-text-weight-semibold'>URL: <a href="book.url" className='has-text-weight-light'>{book.url}</a></div>
@@ -16,5 +13,3 @@ function Detail({ book }) {
         </div>
         )
     }
-
-export default App    
