@@ -8,21 +8,21 @@ import { useState } from 'react'
 export default function Book({ book, index }) {
     const [expanded, setExpanded] = useState(false)
     return (
-        <div className='box tile has-background-grey-lighter book is-flex-direction-row-reverse'>
-            <div className=''>
-                <div className='image is-96x96 ml-2'>
-                    <img src={book.coverImageUrl} alt='Cover'></img>
+        <div className='box tile has-background-white book is-flex-direction-row-reverse is-justify-content-space-between'>
+            <div className='mb-6'>
+                <div className='image is-96x96'>
+                <img src={book.coverImageUrl} alt='Cover'></img>
                 </div>
             </div>
-            <div className='has-text-weight-semibold'>
-                <div className='my-1'>Title:  
-                    <span className='has-text-weight-light'> {book.title}</span>
+            <div className='has-text-weight-semibold mr-2'>
+                <div className='mb-3 is-size-3'> 
+                    <span className='has-text-success-dark'> {book.title}</span>
                 </div>
-                <div className='my-1'>Author: 
+                <div className='my-3'> 
                     <span className='has-text-weight-light' >{book.author}</span>
                 </div>
-                <div className='my-1 has-text-weight-semibold'>Short description: 
-                    <span className='has-text-weight-light'>
+                <div className='my-2'> 
+                    <span className='has-text-weight-medium'>
                     {book.shortDescription}</span>
                 </div>
                 {expanded ? (

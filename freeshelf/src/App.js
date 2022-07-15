@@ -89,11 +89,14 @@ function App() {
     }
   ]
   return (
-    <div className="box has-background-warning page">
-      <div>Books</div>
-      {allBooks.map((book, index) => (
-        <Book book={book} key={index}/>
-      ))}
+    <div className="has-background-light">
+      <div className="card-content">
+        <div>Books</div>
+        {allBooks.map((book, index) => (
+          <Book book={book} key={index}/>
+        ))}
+
+      </div>
     </div>
   );
 }
