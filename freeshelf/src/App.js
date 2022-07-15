@@ -102,7 +102,7 @@ function Book({ book, index }) {
   const [expanded, setExpanded] = useState(false)
   return (
     <div className='box has-background-grey-lighter is-flex-direction-row'>
-      <div className='cover is-flex-direction-row-reverse'>
+      <div className='cover'>
           <img src={book.coverImageUrl} alt='Cover'></img>
       </div>
       <div className='card-content has-text-weight-semibold'>

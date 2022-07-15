@@ -45,6 +45,13 @@
 [x] make image show up 
 
 
+# Rubric: 3s
+[ ] meets all requirements (see above)
+[ ] nicely styled
+[x] uses aria-expanded attribute 
+[ ] breaks application into multiple components in a useful way 
+
+
 <!-- [ ] sketch children/trees? how will props pass? 
 
 [ ] make book component(s??)
