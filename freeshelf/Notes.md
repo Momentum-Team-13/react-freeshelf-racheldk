@@ -32,9 +32,9 @@
 [x] read ARIA thing before expanding button more 
 [ ] include state:
     [x] all books expanded or not 
-    [ ] make ternery thing to display expanded or not for one instance 
     [ ] button for user to choose expanded or not 
     [ ] button has ARIA stuff https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/
+    [ ] make ternery thing to display expanded or not for one instance 
 [ ] styling 
 
 # Fix:

@@ -104,9 +104,16 @@ function Book({ book, index }) {
       <div>Title: {book.title}</div>
       <div>Author: {book.author}</div>
       <div>Short description: {book.shortDescription}</div>
-      <img src='{book.coverImageUrl}' alt='Cover'></img>
+      <div>
+        <img src='{book.coverImageUrl}' alt='Cover'></img>
+      </div>
       {expanded ? (
-        <Detail book={book} key={index} />
+        <button type="button" aria-expanded="true" onClick={() => setExpanded(!expanded)}>Show Less</button>  
+        ) : (
+          <button type="button" aria-expanded="false" onClick={() => setExpanded(!expanded)}>Show More</button>
+          )}
+      {expanded ? (
+          <Detail book={book} key={index} />
       ): (
         ''
       )}
