@@ -34,8 +34,9 @@
     [x] all books expanded or not 
     [x] button for user to choose expanded or not 
     [x] button has ARIA stuff https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/ 
+[x] components in separate files    
 [ ] styling 
-    [ ] image in separate div spaced nicely?
+    [ ] image in separate div spaced nicely? something about flex-direction? 
     [ ] "Book" heading 
     [ ] card: 
         [ ] differentiate text chunks 

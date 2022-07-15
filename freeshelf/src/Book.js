@@ -8,11 +8,13 @@ import { useState } from 'react'
 export default function Book({ book, index }) {
     const [expanded, setExpanded] = useState(false)
     return (
-        <div className='box has-background-grey-lighter is-flex-direction-row'>
-            <div className='cover'>
-                <img src={book.coverImageUrl} alt='Cover'></img>
+        <div className='box tile has-background-grey-lighter book is-flex-direction-row-reverse'>
+            <div className=''>
+                <div className='image is-96x96 ml-2'>
+                    <img src={book.coverImageUrl} alt='Cover'></img>
+                </div>
             </div>
-            <div className='card-content has-text-weight-semibold'>
+            <div className='has-text-weight-semibold'>
                 <div className='my-1'>Title:  
                     <span className='has-text-weight-light'> {book.title}</span>
                 </div>
