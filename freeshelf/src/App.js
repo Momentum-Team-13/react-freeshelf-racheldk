@@ -90,6 +90,7 @@ function App() {
   ]
   return (
     <div className="box has-background-warning">
+      <div>Books</div>
       {allBooks.map((book, index) => (
         <Book book={book} key={index}/>
       ))}
@@ -100,23 +101,28 @@ function App() {
 function Book({ book, index }) {
   const [expanded, setExpanded] = useState(false)
   return (
-    <div className='box has-background-grey-lighter'>
-      <div>Title: {book.title}</div>
-      <div>Author: {book.author}</div>
-      <div>Short description: {book.shortDescription}</div>
-      <div>
-        <img src='{book.coverImageUrl}' alt='Cover'></img>
+    <div className='box has-background-grey-lighter is-flex-direction-row'>
+      <div className='cover is-flex-direction-row-reverse'>
+          <img src={book.coverImageUrl} alt='Cover'></img>
       </div>
-      {expanded ? (
-        <button type="button" aria-expanded="true" onClick={() => setExpanded(!expanded)}>Show Less</button>  
-        ) : (
-          <button type="button" aria-expanded="false" onClick={() => setExpanded(!expanded)}>Show More</button>
-          )}
-      {expanded ? (
+      <div className='card-content has-text-weight-semibold'>
+        <div className='my-1'>Title:  
+            <span className='has-text-weight-light'> {book.title}</span>
+            </div>
+        <div className='my-1'>Author: <span className='has-text-weight-light' >{book.author}</span></div>
+        <div className='my-1 has-text-weight-semibold'>Short description: <span className='has-text-weight-light'>
+          {book.shortDescription}</span></div>
+        {expanded ? (
+          <button className='my-1' type="button" aria-expanded="true" onClick={() => setExpanded(!expanded)}>Show Less</button>  
+          ) : (
+            <button type="button" aria-expanded="false" onClick={() => setExpanded(!expanded)}>Show More</button>
+            )}
+        {expanded ? (
           <Detail book={book} key={index} />
-      ): (
-        ''
-      )}
+          ): (
+            ''
+            )}
+        </div>
     </div>
   )
 }
@@ -124,10 +130,10 @@ function Book({ book, index }) {
 function Detail({ book }) {
   return (
     <div>
-      <div>URL: <a href="book.url">{book.url}</a></div>
-      <div>Published by: {book.publisher}</div>
-      <div>Published on: {book.publicationDate}</div>
-      <div>Detailed description: {book.detailedDescription}</div>
+      <div className='my-1 has-text-weight-semibold'>URL: <a href="book.url" className='has-text-weight-light'>{book.url}</a></div>
+      <div className='my-1'>Published by: <span className='has-text-weight-light'> {book.publisher}</span></div>
+      <div className='my-1'>Published on: <span className='has-text-weight-light'>{book.publicationDate}</span></div>
+      <div className='my-1'>Detailed description: <span className='has-text-weight-light'> {book.detailedDescription}</span></div>
     </div>
   )
 }

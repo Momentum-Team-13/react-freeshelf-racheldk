@@ -3,21 +3,21 @@
 
 
 # App Requirements: 
-[ ] When the information for the book is clicked, the section expands to show additional information about said book 
-[ ] When the information is clicked again, book display collapses to original view 
+[x] When the information for the book is clicked, the section expands to show additional information about said book 
+[x] When the information is clicked again, book display collapses to original view 
 [ ] Book display    
-    [ ] title
-    [ ] author 
-    [ ] short description 
+    [x] title
+    [x] author 
+    [x] short description 
     [ ] book cover image 
-[ ] additional info 
-    [ ] url 
-    [ ] publisher
-    [ ] publication date
-    [ ] expanded description
+[x] additional info 
+    [x] url 
+    [x] publisher
+    [x] publication date
+    [x] expanded description
     
 [ ] handle cases where not all data is available (make sure your UI design can accommodate missing or problematic data and/or supply placeholders so the page doesn't look broken without it) _how??_
-[ ] copy/paste book list into the code -- _but where??_   
+[x] copy/paste book list into the code 
 
 # Things to do! 
 [x] sketch views 
@@ -30,15 +30,19 @@
 [x] loop through books
 [x] make component of info to be expanded 
 [x] read ARIA thing before expanding button more 
-[ ] include state:
+[x] include state:
     [x] all books expanded or not 
-    [ ] button for user to choose expanded or not 
-    [ ] button has ARIA stuff https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/
-    [ ] make ternery thing to display expanded or not for one instance 
+    [x] button for user to choose expanded or not 
+    [x] button has ARIA stuff https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/ 
 [ ] styling 
+    [ ] image in separate div spaced nicely?
+    [ ] "Book" heading 
+    [ ] card: 
+        [ ] differentiate text chunks 
+        [ ] button styling? 
 
 # Fix:
-[ ] make image show up 
+[x] make image show up 
 
 
 <!-- [ ] sketch children/trees? how will props pass? 
