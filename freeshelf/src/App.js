@@ -2,6 +2,7 @@ import React from 'react'
 // import logo from './logo.svg';
 import './App.css';
 import 'bulma/css/bulma.min.css';
+import { useState } from 'react'
 
 
 function App() {
@@ -97,13 +98,18 @@ function App() {
 }
 
 function Book({ book, index }) {
+  const [expanded, setExpanded] = useState(false)
   return (
     <div className='box has-background-grey-lighter'>
       <div>Title: {book.title}</div>
       <div>Author: {book.author}</div>
       <div>Short description: {book.shortDescription}</div>
-      <img src='{book.coverImageUrl}' alt='Cover Image'></img>
-      <Detail book={book} key={index} />
+      <img src='{book.coverImageUrl}' alt='Cover'></img>
+      {expanded ? (
+        <Detail book={book} key={index} />
+      ): (
+        ''
+      )}
     </div>
   )
 }

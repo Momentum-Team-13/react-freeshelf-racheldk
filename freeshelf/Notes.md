@@ -29,10 +29,12 @@
     [x] pull data in 
 [x] loop through books
 [x] make component of info to be expanded 
+[x] read ARIA thing before expanding button more 
 [ ] include state:
-    [ ] all books expanded or not 
+    [x] all books expanded or not 
     [ ] make ternery thing to display expanded or not for one instance 
     [ ] button for user to choose expanded or not 
+    [ ] button has ARIA stuff https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/
 [ ] styling 
 
 # Fix:
