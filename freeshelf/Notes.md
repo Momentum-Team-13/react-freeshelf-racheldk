@@ -16,7 +16,7 @@
     [x] publication date
     [x] expanded description
     
-[ ] handle cases where not all data is available (make sure your UI design can accommodate missing or problematic data and/or supply placeholders so the page doesn't look broken without it) conditional rendering 
+[x] handle cases where not all data is available (make sure your UI design can accommodate missing or problematic data and/or supply placeholders so the page doesn't look broken without it) conditional rendering 
 [x] copy/paste book list into the code 
 
 # Things to do! 
@@ -35,27 +35,27 @@
     [x] button for user to choose expanded or not 
     [x] button has ARIA stuff https://www.w3.org/WAI/ARIA/apg/patterns/disclosure/ 
 [x] components in separate files    
-[ ] styling 
+[x] styling 
     [x] image in separate div spaced nicely? something about flex-direction? 
-    [ ] "Book" heading 
-    [ ] card: 
+    [x] "Book" heading 
+    [x] card: 
         [x] differentiate text chunks 
-        [ ] button styling? 
-[ ] conditional rendering: only show up if there's content        
+        [x] button styling? 
+[x] conditional rendering: only show up if there's content        
 
 # Fix:
 [x] make image show up 
 
 
 # Rubric: 3s
-[ ] meets all requirements (see above)
-[ ] nicely styled
+[x] meets all requirements (see above)
+[x] nicely styled
 [x] uses aria-expanded attribute 
-[ ] breaks application into multiple components in a useful way 
+[x] breaks application into multiple components in a useful way 
 
 
 # Extras 
-[ ] provide alternative for broken image src 
+[x] provide alternative for broken image src 
 
 # Questions
 - Where will the state (basic or expanded) be kept? I'm guessing on the book, since that's the one that will have to be changed? But in the tic tac toe tutorial it was kept on the game board, not the individual square....so....maybe the book list? 

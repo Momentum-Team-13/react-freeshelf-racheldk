@@ -19,11 +19,11 @@ export default function Detail({ book }) {
                     )}
 
             { book.publicationDate ? (
-                <div className='my-1'>Published on: <span className='has-text-weight-light'>{book.publicationDate}</span></div>
+                <div className='my-1'>Published in: <span className='has-text-weight-light'>{book.publicationDate}</span></div>
             ) : (
                 ''
             )} 
-            
+
             { book.detailedDescription ? (
                 <div className='my-1'>Full description: <span className='has-text-weight-light'> {book.detailedDescription}</span></div>
             ) : (

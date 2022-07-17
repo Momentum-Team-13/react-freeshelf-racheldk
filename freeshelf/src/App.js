@@ -89,9 +89,15 @@ function App() {
     }
   ]
   return (
-    <div className="has-background-light">
+    <div className="has-background-success-light">
+      <div className='hero is-small has-background-white'>
+        <div className='hero-body'>
+          <div className='title has-text-success-dark has-text-weight-boldn has-text-centered is-size-1'>
+            <div className='has-text-success-dark'>Books</div>
+          </div>
+        </div>
+      </div>
       <div className="card-content">
-        <div>Books</div>
         {allBooks.map((book, index) => (
           <Book book={book} key={index}/>
         ))}

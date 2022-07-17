@@ -11,7 +11,11 @@ export default function Book({ book, index }) {
         <div className='box tile has-background-white book is-flex-direction-row-reverse is-justify-content-space-between'>
             <div className='mb-6'>
                 <div className='image is-96x96'>
-                <img src={book.coverImageUrl} alt='Cover'></img>
+                    <img 
+                        src={book.coverImageUrl}
+                        onError={(e) => e.target.src = 'default_book_cover.jpeg'} 
+                        alt='Cover'
+                    ></img>
                 </div>
             </div>
             <div className='has-text-weight-semibold mr-2'>
@@ -26,9 +30,9 @@ export default function Book({ book, index }) {
                     {book.shortDescription}</span>
                 </div>
                 {expanded ? (
-                    <button className='my-1' type="button" aria-expanded="true" onClick={() => setExpanded(!expanded)}>Show Less</button>  
+                    <button className='my-1 button is-small is-rounded is-outlined has-text-success-dark' type="button" aria-expanded="true" onClick={() => setExpanded(!expanded)}>Show Less</button>  
                     ) : (
-                    <button type="button" aria-expanded="false" onClick={() => setExpanded(!expanded)}>Show More</button>
+                    <button className='my-1 button is-small is-rounded is-outlined has-text-success-dark' type="button" aria-expanded="false" onClick={() => setExpanded(!expanded)}>Show More</button>
                     )}
                 {expanded ? (
                     <Detail book={book} key={index} />
