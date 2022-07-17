@@ -90,10 +90,10 @@ function App() {
   ]
   return (
     <div className="has-background-success-light">
-      <div className='hero is-small has-background-white'>
+      <div className='hero card-header is-small has-background-white'>
         <div className='hero-body'>
-          <div className='title has-text-success-dark has-text-weight-boldn has-text-centered is-size-1'>
-            <div className='has-text-success-dark'>Books</div>
+          <div className='title has-text-success-dark has-text-weight-bold has-text-centered is-size-1'>
+            <div>Books</div>
           </div>
         </div>
       </div>

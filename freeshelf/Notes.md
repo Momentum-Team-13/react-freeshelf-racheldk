@@ -45,6 +45,7 @@
 
 # Fix:
 [x] make image show up 
+[x] provide alternative for broken image src 
 
 
 # Rubric: 3s
@@ -53,9 +54,6 @@
 [x] uses aria-expanded attribute 
 [x] breaks application into multiple components in a useful way 
 
-
-# Extras 
-[x] provide alternative for broken image src 
 
 # Questions
 - Where will the state (basic or expanded) be kept? I'm guessing on the book, since that's the one that will have to be changed? But in the tic tac toe tutorial it was kept on the game board, not the individual square....so....maybe the book list? 
